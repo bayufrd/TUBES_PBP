@@ -5,4 +5,58 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Home_Panel"/>
+        tools:context=".Home_Panel">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="199dp"
+            android:layout_height="173dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.089"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+            android:layout_width="58dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="Masuk   |"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="280dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="Daftar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="346dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="LIST SAPI"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:layout_editor_absoluteX="174dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

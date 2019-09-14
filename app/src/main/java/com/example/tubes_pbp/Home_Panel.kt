@@ -3,7 +3,7 @@ package com.example.tubes_pbp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Home_Panel : AppCompatActivity() {
+open class Home_Panel : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
