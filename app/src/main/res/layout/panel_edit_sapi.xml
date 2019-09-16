@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="167dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:text="Edit Sapi" />
+
+    <EditText
+            android:id="@+id/editText5"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="178dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Berat " />
+
+    <TextView
+            android:id="@+id/textView6"
+            android:layout_width="35dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="119dp"
+            android:layout_toEndOf="@+id/editText5"
+            android:text="KG" />
+
+    <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Warna" />
+
+    <Spinner
+            android:id="@+id/jenisSapi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText6"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp"
+            android:text="Jenis Sapi"/>
+
+    <Spinner
+            android:id="@+id/jenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jenisSapi"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="23dp" />
+
+    <EditText
+            android:id="@+id/editText7"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jenisKelamin"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Umur" />
+
+    <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jenisKelamin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="97dp"
+            android:layout_toEndOf="@+id/editText7"
+            android:text="Bulan" />
+
+    <EditText
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText7"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Harga" />
+
+    <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText7"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="35dp"
+            android:text="Rp." />
+
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="206dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/editText8"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="129dp"
+            android:text="Lokasi" />
+
+    <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="33dp"
+            android:text="Edit" />
+
+    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="98dp"
+            android:layout_height="97dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="21dp"
+            app:srcCompat="@drawable/logo" />
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginBottom="34dp"
+            android:text="Hapus" />
+</RelativeLayout>

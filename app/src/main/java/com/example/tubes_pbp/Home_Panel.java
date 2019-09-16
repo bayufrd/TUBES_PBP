@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Home_Panel extends AppCompatActivity {
     private TextView linkLogin;
     private TextView linkRegister;
-    private TextView btnTambah;
 
     @Override
     protected void onCreate(Bundle savedInstanceStata) {
@@ -33,15 +32,6 @@ public class Home_Panel extends AppCompatActivity {
             public void onClick(View view){
                 Intent j= new Intent(Home_Panel.this, Register_Panel.class);
                 startActivity(j);
-            }
-        });
-
-        btnTambah = (TextView) findViewById(R.id.btnTambah);
-        btnTambah.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent i= new Intent(Home_Panel.this, TambahSapi_Panel.class);
-                startActivity(i);
             }
         });
     }
