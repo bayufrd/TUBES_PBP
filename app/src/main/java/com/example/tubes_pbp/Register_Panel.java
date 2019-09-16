@@ -35,8 +35,7 @@ public class Register_Panel extends Login_Panel{
     BaseApiService mApiService;
 
     private TextView linkLogin;
-    private Button btnDaftar;
-    private UtilsApi UtilsApi;
+    private Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +56,8 @@ public class Register_Panel extends Login_Panel{
             }
         });
 
-        btnDaftar = (Button)findViewById(R.id.btnDaftar);
-        btnDaftar.setOnClickListener(new View.OnClickListener() {
+        btnLogin = (Button)findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Register_Panel.this, Login_Panel.class);
@@ -67,7 +66,7 @@ public class Register_Panel extends Login_Panel{
         });
     }
 
-    private void initComponents {
+    private void initComponents() {
         etNama = (EditText) findViewById(R.id.etNama);
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);

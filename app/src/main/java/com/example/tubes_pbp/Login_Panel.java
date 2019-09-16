@@ -1,4 +1,6 @@
 package com.example.tubes_pbp;
+import com.example.tubes_pbp.apihelper.BaseApiService;
+import com.example.tubes_pbp.apihelper.UtilsApi;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -34,7 +36,7 @@ public class Login_Panel extends Home_Panel{
     Context mContext;
     BaseApiService mApiService;
 
-    private Button btnLogin;
+    private Button btnMasuk;
     private TextView linkRegister;
 
     @Override
