@@ -1,0 +1,4 @@
+#Mon Sep 16 19:13:13 ICT 2019
+base.0=E\:\\KULIAH\\Semester V\\PBP E\\TUBES\\TUBES_PBP\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

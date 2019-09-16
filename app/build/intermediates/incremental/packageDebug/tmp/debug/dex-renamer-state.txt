@@ -1,0 +1,7 @@
+#Mon Sep 16 19:11:47 ICT 2019
+base.0=E\:\\KULIAH\\Semester V\\PBP E\\TUBES\\TUBES_PBP\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=E\:\\KULIAH\\Semester V\\PBP E\\TUBES\\TUBES_PBP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
