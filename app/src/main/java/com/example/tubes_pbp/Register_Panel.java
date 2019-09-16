@@ -29,7 +29,7 @@ public class Register_Panel extends Login_Panel{
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Register_Panel.this, Home_Panel.class);
+                Intent i = new Intent(Register_Panel.this, Login_Panel.class);
                 startActivity(i);
             }
         });

@@ -20,7 +20,7 @@ public class Login_Panel extends Home_Panel{
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Login_Panel.this, Home_Panel.class);
+                Intent i = new Intent(Login_Panel.this, HomeAfter_Panel.class);
                 startActivity(i);
             }
         });

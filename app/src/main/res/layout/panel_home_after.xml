@@ -1,60 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent" android:layout_height="match_parent">
+
     <ImageView
             android:id="@+id/imageView"
             android:layout_width="199dp"
             android:layout_height="173dp"
-            android:layout_marginTop="196dp"
-            android:src="@drawable/logo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="120dp"
+            android:src="@drawable/logo" />
 
     <Button
             android:id="@+id/btnTambah"
             android:layout_width="58dp"
             android:layout_height="62dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-            android:id="@+id/linkLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="12dp"
-            android:autoLink="web"
-            android:linksClickable="true"
-            android:text="Masuk   |"
-            app:layout_constraintEnd_toStartOf="@+id/linkRegister"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-            android:id="@+id/linkRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="26dp"
-            android:autoLink="web"
-            android:linksClickable="true"
-            android:text="Daftar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="17dp" />
 
     <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="70dp"
             android:text="LIST SAPI"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            android:textStyle="bold" />
+
+    <Button
+            android:id="@+id/btnEditAkun"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="16dp"
+            android:text="Button" />
 </RelativeLayout>

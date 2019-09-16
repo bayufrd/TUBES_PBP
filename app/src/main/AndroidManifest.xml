@@ -19,6 +19,8 @@
         <activity android:name=".Login_Panel"></activity>
         <activity android:name=".Register_Panel"></activity>
         <activity android:name=".TambahSapi_Panel"></activity>
+        <activity android:name=".EditAkun_Panel"></activity>
+        <activity android:name=".HomeAfter_Panel"></activity>
     </application>
 
 </manifest>
