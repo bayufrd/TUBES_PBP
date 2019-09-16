@@ -1,5 +1,9 @@
 package com.example.tubes_pbp.apihelper;
 
+import okhttp3.OkHttpClient;
+import retrofit2.Retrofit;
+
+public class RetrofitClient {
     private static Retrofit retrofit = null;
 
     public static Retrofit getClient(String baseUrl){
@@ -16,3 +20,4 @@ package com.example.tubes_pbp.apihelper;
         }
         return retrofit;
     }
+}

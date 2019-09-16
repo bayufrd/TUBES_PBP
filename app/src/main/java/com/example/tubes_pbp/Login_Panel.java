@@ -56,7 +56,7 @@ public class Login_Panel extends Home_Panel{
         });
     }
 
-    private void initComponents() {
+    void initComponents() {
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
         btnLogin = (Button) findViewById(R.id.btnLogin);
@@ -70,7 +70,6 @@ public class Login_Panel extends Home_Panel{
             }
 
             private void requestLogin() {
-                private void requestLogin(){
                     mApiService.loginRequest(etEmail.getText().toString(), etPassword.getText().toString())
                             .enqueue(new Callback<ResponseBody>() {
                                 @Override
@@ -108,17 +107,6 @@ public class Login_Panel extends Home_Panel{
                                     loading.dismiss();
                                 }
                             });
-                }
-            }
-        });
-
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(mContext, Register_Panel.class));
-            }
-        });
-    }
-
+                }});}
 
 }

@@ -67,7 +67,7 @@ public class Register_Panel extends Login_Panel{
         });
     }
 
-    public void initComponents{
+    private void initComponents {
         etNama = (EditText) findViewById(R.id.etNama);
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
@@ -81,7 +81,6 @@ public class Register_Panel extends Login_Panel{
             }
 
             private void requestRegister() {
-                private void requestRegister(){
                     mApiService.registerRequest(etNama.getText().toString(),
                             etEmail.getText().toString(),
                             etPassword.getText().toString())
@@ -117,8 +116,8 @@ public class Register_Panel extends Login_Panel{
                                     Toast.makeText(mContext, "Koneksi Internet Bermasalah", Toast.LENGTH_SHORT).show();
                                 }
                             });
-                }
-            }
-        });
+                }}
+            );}
+
     }
-}
+

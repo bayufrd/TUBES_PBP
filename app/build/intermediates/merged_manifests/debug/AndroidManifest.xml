@@ -26,6 +26,9 @@
         </activity>
         <activity android:name="com.example.tubes_pbp.Login_Panel" />
         <activity android:name="com.example.tubes_pbp.Register_Panel" />
+        <activity android:name="com.example.tubes_pbp.TambahSapi_Panel" />
+        <activity android:name="com.example.tubes_pbp.EditAkun_Panel" />
+        <activity android:name="com.example.tubes_pbp.HomeAfter_Panel" />
     </application>
 
 </manifest>
