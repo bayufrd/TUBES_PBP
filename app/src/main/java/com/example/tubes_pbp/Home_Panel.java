@@ -3,6 +3,7 @@ package com.example.tubes_pbp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -12,7 +13,7 @@ public class Home_Panel extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceStata) {
-
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceStata);
         setContentView(R.layout.panel_home);
 
