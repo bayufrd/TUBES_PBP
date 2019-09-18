@@ -69,9 +69,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Ba
 	android:label
 		ADDED from E:\KULIAH\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:9:13-45
 	android:roundIcon
-		ADDED from E:\KULIAH\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:10:13-58
+		ADDED from E:\KULIAH\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:10:13-47
 	android:icon
-		ADDED from E:\KULIAH\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:8:13-47
+		ADDED from E:\KULIAH\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:8:13-42
 	android:allowBackup
 		ADDED from E:\KULIAH\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:7:13-39
 	android:theme
