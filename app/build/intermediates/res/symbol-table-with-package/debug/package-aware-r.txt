@@ -643,9 +643,13 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable batal
+drawable daftar
+drawable hapus
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
+drawable masuk
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -658,6 +662,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable ok
+drawable pluss
+drawable tambah
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -694,7 +701,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btnDaftar
 id btnEditAkun
 id btnLogin
 id btnRegister
@@ -735,6 +741,7 @@ id email
 id end
 id etEmail
 id etNama
+id etNohp
 id etPassword
 id expand_activities_button
 id expanded_menu
@@ -751,10 +758,14 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageButtonDaftar
+id imageButtonMasuk
+id imageButtonPluss
 id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView5
 id info
 id invisible
 id italic
@@ -771,9 +782,7 @@ id list_item
 id message
 id middle
 id multiply
-id nama
 id never
-id noHp
 id none
 id normal
 id notification_background
@@ -831,7 +840,6 @@ id textSpacerNoTitle
 id textView
 id textView10
 id textView12
-id textView2
 id textView3
 id textView4
 id textView5

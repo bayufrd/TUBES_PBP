@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ public class Register_Panel extends Login_Panel{
     EditText etNama;
     EditText etEmail;
     EditText etPassword;
-    Button btnRegister;
+    ImageView btnRegister;
     ProgressDialog loading;
 
     Context mContext;
@@ -45,7 +46,7 @@ public class Register_Panel extends Login_Panel{
         mContext = this;
         mApiService = UtilsApi.getAPIService();
 
-        initComponents();
+        initComponents2();
 
         linkLogin = (TextView) findViewById(R.id.linkLogin);
         linkLogin.setOnClickListener(new View.OnClickListener(){
@@ -66,11 +67,11 @@ public class Register_Panel extends Login_Panel{
         });
     }
 
-    private void initComponents() {
+    private void initComponents2() {
         etNama = (EditText) findViewById(R.id.etNama);
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
-        btnRegister = (Button) findViewById(R.id.btnRegister);
+        btnRegister = (ImageView) findViewById(R.id.btnRegister);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.tubes_pbp">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
             android:allowBackup="true"
@@ -21,6 +22,7 @@
         <activity android:name=".TambahSapi_Panel"></activity>
         <activity android:name=".EditAkun_Panel"></activity>
         <activity android:name=".HomeAfter_Panel"></activity>
+        <activity android:name=".EditSapi_Panel"></activity>
     </application>
 
 </manifest>

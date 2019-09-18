@@ -3,13 +3,12 @@ package com.example.tubes_pbp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Home_Panel extends AppCompatActivity {
-    private TextView linkLogin;
-    private TextView linkRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceStata) {
@@ -17,22 +16,28 @@ public class Home_Panel extends AppCompatActivity {
         super.onCreate(savedInstanceStata);
         setContentView(R.layout.panel_home);
 
-        linkLogin = (TextView) findViewById(R.id.linkLogin);
-        linkLogin.setOnClickListener(new View.OnClickListener(){
+        ImageView tambah = (ImageView) findViewById(R.id.imageButtonPluss);
+        ImageView masuk = (ImageView) findViewById(R.id.imageButtonMasuk);
+        ImageView daftar = (ImageView) findViewById(R.id.imageButtonDaftar);
+
+        masuk.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent i= new Intent(Home_Panel.this, Login_Panel.class);
-                startActivity(i);
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Panel.this, Login_Panel.class);
+                startActivity(intent);
+            }
+        });
+        daftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Panel.this, Register_Panel.class);
+                startActivity(intent);
             }
         });
 
-        linkRegister = (TextView) findViewById(R.id.linkRegister);
-        linkRegister.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent j= new Intent(Home_Panel.this, Register_Panel.class);
-                startActivity(j);
-            }
-        });
+
+    }
+    public void buttonGambar(View view) {
+        Toast.makeText(getApplicationContext(), "Anda belum masuk sebagai User", Toast.LENGTH_LONG).show();
     }
 }
