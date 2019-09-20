@@ -1,4 +1,4 @@
-package com.example.tubes_pbp.apihelper;
+package com.example.tubes_pbp;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -7,7 +7,6 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface BaseApiService {
-
     // Fungsi ini untuk memanggil API http://bayufarid.000webhostapp.com/tubespbp/db_akun/login.php
     @FormUrlEncoded
     @POST("login.php")

@@ -1,4 +1,4 @@
-package com.example.tubes_pbp.apihelper;
+package com.example.tubes_pbp;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
