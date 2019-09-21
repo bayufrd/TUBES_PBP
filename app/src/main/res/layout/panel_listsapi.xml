@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="4dp">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RecycleAdapter">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/Parent">
+
+        <TextView
+                android:id="@+id/Bnamapemilik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Pemilik" />
+        <TextView
+                android:id="@+id/Bjenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis" />
+
+        <TextView
+                android:id="@+id/Bjeniskelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+        <TextView
+                android:id="@+id/Bwarna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Warna" />
+
+        <TextView
+                android:id="@+id/Bberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berat" />
+
+        <TextView
+                android:id="@+id/Bumur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umur" />
+
+        <TextView
+                android:id="@+id/Bharga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga" />
+
+        <TextView
+                android:id="@+id/Bnohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Telp" />
+
+        <TextView
+                android:id="@+id/Blokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout></androidx.cardview.widget.CardView>

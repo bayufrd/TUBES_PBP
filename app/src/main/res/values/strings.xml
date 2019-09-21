@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">JUAL SAPI | jualsapi.com</string>
+    <string-array name="jenisSapi">
+        <item name="Limousin">Limousin</item>
+        <item name="Brahman">Brahman</item>
+        <item name="Bali">Bali</item>
+        <item name="Angus">Angus</item>
+        <item name="Brangus">Brangus</item>
+    </string-array>
+
+    <string-array name="jenisKelamin">
+        <item name="Jantan">Jantan</item>
+        <item name="Betina">Betina</item>
+    </string-array>
+
 </resources>

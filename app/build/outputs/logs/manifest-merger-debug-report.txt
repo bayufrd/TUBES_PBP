@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\94f0f27ce151cc33c2ba10e9f9ffbc52\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\78d7004a20db30b97ec01dc936a15257\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.satyan:sugar:1.5] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\165b5f760efac4d18ec8f27006238d03\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\d2b753385f1db73a9bed031892a2685b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\7fc266025e00d17bed3b7eaa2b55911b\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\084ce4b19f0c57ed8df3944d6e61b420\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\2577012934373fcdfa1325a1190a42f3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\f1ddd186b4035f3544f2f0860890b36c\AndroidManifest.xml:17:1-22:12
@@ -33,20 +34,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Windows\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\7ac130fc5e08f4001a34d589d526c716\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\788f848c3cde9f90931f7933fad64ad6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\600ff538284c90be40d60ae977402a37\AndroidManifest.xml:17:1-22:12
-INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:3:11-42
 		INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml
 		INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml
-		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml
-		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:2:11-69
@@ -55,7 +56,7 @@ ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManife
 	android:name
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:6:5-27:19
+ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:6:5-28:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\78d7004a20db30b97ec01dc936a15257\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\78d7004a20db30b97ec01dc936a15257\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.0.1] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\4ef061bbe1fb89f04d118530313caef3\AndroidManifest.xml:22:5-89
@@ -76,12 +77,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Wi
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:7:13-39
 	android:theme
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:12:13-44
-activity#com.example.tubes_pbp.Home_Panel
+activity#com.example.tubes_pbp.HomeAfter_Panel
 ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:13:9-20:20
 	android:theme
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:14:17-67
 	android:name
-		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:13:19-45
+		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:13:19-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
@@ -101,21 +102,23 @@ ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManife
 	android:name
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:22:19-49
 activity#com.example.tubes_pbp.TambahSapi_Panel
-ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:23:9-63
+ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:23:9-24:79
+	android:theme
+		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:24:17-67
 	android:name
 		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:23:19-51
 activity#com.example.tubes_pbp.EditAkun_Panel
-ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:24:9-61
+ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:25:9-61
 	android:name
-		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:24:19-49
-activity#com.example.tubes_pbp.HomeAfter_Panel
-ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:25:9-62
+		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:25:19-49
+activity#com.example.tubes_pbp.Home_Panel
+ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:26:9-57
 	android:name
-		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:25:19-50
+		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:26:19-45
 activity#com.example.tubes_pbp.EditSapi_Panel
-ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:26:9-61
+ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:27:9-61
 	android:name
-		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:26:19-49
+		ADDED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml:27:19-49
 uses-sdk
 INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\KULIAH\Semester V\PBP E\TUBES\TUBES_PBP\app\src\main\AndroidManifest.xml
@@ -128,6 +131,8 @@ MERGED from [com.github.satyan:sugar:1.5] C:\Users\Windows\.gradle\caches\transf
 MERGED from [com.github.satyan:sugar:1.5] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\165b5f760efac4d18ec8f27006238d03\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\d2b753385f1db73a9bed031892a2685b\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\d2b753385f1db73a9bed031892a2685b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\7fc266025e00d17bed3b7eaa2b55911b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\7fc266025e00d17bed3b7eaa2b55911b\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\084ce4b19f0c57ed8df3944d6e61b420\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\084ce4b19f0c57ed8df3944d6e61b420\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Windows\.gradle\caches\transforms-2\files-2.1\2577012934373fcdfa1325a1190a42f3\AndroidManifest.xml:20:5-44

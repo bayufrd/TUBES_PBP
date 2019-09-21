@@ -1,38 +1,67 @@
 package com.example.tubes_pbp;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.tubes_pbp.api.ApiRequestBiodata;
+import com.example.tubes_pbp.api.Retroserver;
+import com.example.tubes_pbp.model.ResponsModel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class HomeAfter_Panel extends Home_Panel {
 
-    private TextView btnTambah;
-    private Button btnEditAkun;
+        private RecyclerView mRecycler;
+        private RecyclerView.Adapter mAdapter;
+        private RecyclerView.LayoutManager mManager;
+        private List<SapiDAO> mItems = new ArrayList<>();
+        ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceStata) {
 
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceStata);
         setContentView(R.layout.panel_home_after);
 
-        btnTambah = (TextView) findViewById(R.id.btnTambah);
-        btnTambah.setOnClickListener(new View.OnClickListener() {
+        pd = new ProgressDialog(this);
+        mRecycler = (RecyclerView) findViewById(R.id.panel_listsapi);
+        mManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+        mRecycler.setLayoutManager(mManager);
+        ImageView tambah = (ImageView) findViewById(R.id.imageButtonPluss);
+        ImageView edit = (ImageView) findViewById(R.id.imageButtonProfil);
+
+        tambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomeAfter_Panel.this, TambahSapi_Panel.class);
-                startActivity(i);
+                Intent intent = new Intent(HomeAfter_Panel.this, TambahSapi_Panel.class);
+                startActivity(intent);
             }
         });
 
-        btnEditAkun = (Button) findViewById(R.id.btnEditAkun);
-        btnEditAkun.setOnClickListener(new View.OnClickListener() {
+
+        edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomeAfter_Panel.this, EditAkun_Panel.class);
-                startActivity(i);
+                Intent intent = new Intent(HomeAfter_Panel.this, EditAkun_Panel.class);
+                startActivity(intent);
             }
         });
-    }
+
+       }
 }

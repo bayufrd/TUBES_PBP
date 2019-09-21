@@ -17,7 +17,7 @@
             android:text="Edit Sapi" />
 
     <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/edtBerat"
             android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -37,14 +37,14 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="135dp"
             android:layout_marginEnd="119dp"
-            android:layout_toEndOf="@+id/editText5"
+            android:layout_toEndOf="@+id/edtBerat"
             android:text="KG" />
 
     <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/edtWarna"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText5"
+            android:layout_below="@+id/edtBerat"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="27dp"
             android:ems="10"
@@ -55,7 +55,7 @@
             android:id="@+id/jenisSapi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText6"
+            android:layout_below="@+id/edtWarna"
             android:layout_alignParentStart="true"
             android:layout_marginTop="29dp"
             android:text="Jenis Sapi"/>
@@ -69,7 +69,7 @@
             android:layout_marginTop="23dp" />
 
     <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/edtUmur"
             android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/jenisKelamin"
@@ -89,14 +89,14 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="43dp"
             android:layout_marginEnd="97dp"
-            android:layout_toEndOf="@+id/editText7"
+            android:layout_toEndOf="@+id/edtUmur"
             android:text="Bulan" />
 
     <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/edtHarga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText7"
+            android:layout_below="@+id/edtUmur"
             android:layout_alignParentStart="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="100dp"
@@ -109,7 +109,7 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText7"
+            android:layout_below="@+id/edtUmur"
             android:layout_alignParentStart="true"
             android:layout_marginStart="65dp"
             android:layout_marginTop="35dp"
@@ -119,7 +119,7 @@
             android:id="@+id/button3"
             android:layout_width="206dp"
             android:layout_height="39dp"
-            android:layout_below="@+id/editText8"
+            android:layout_below="@+id/edtHarga"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
@@ -129,7 +129,7 @@
             android:text="Lokasi" />
 
     <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnTambah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

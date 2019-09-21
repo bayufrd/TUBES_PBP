@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent" android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
 
     <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="104dp"
-            android:layout_height="106dp"
+            android:layout_width="89dp"
+            android:layout_height="90dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="16dp"
@@ -21,71 +23,88 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="36dp"
             android:layout_marginEnd="41dp"
-            android:text="Tambah Sapi" />
+            android:text="Tambah Sapi"
+            android:textColor="#000000" />
 
     <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/edtBerat"
             android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="104dp"
-            android:layout_marginTop="178dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="217dp"
             android:ems="10"
+            android:hint="Berat"
             android:inputType="textPersonName"
-            android:text="Berat " />
+            android:textColor="#000000"
+            android:textColorHint="#5A5A5A" />
 
     <TextView
             android:id="@+id/textView6"
-            android:layout_width="35dp"
-            android:layout_height="24dp"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/textView4"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="135dp"
-            android:layout_marginEnd="119dp"
-            android:layout_toEndOf="@+id/editText5"
-            android:text="KG" />
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="89dp"
+            android:layout_toEndOf="@+id/edtBerat"
+            android:text="KG"
+            android:textColor="#000000" />
 
     <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/edtWarna"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText5"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="27dp"
+            android:layout_below="@+id/edtBerat"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="28dp"
             android:ems="10"
+            android:hint="Warna"
             android:inputType="textPersonName"
-            android:text="Warna" />
+            android:textColor="#000000"
+            android:textColorHint="#5A5A5A" />
 
     <Spinner
             android:id="@+id/jenisSapi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editText6"
+            android:layout_width="104dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/edtWarna"
             android:layout_alignParentStart="true"
+            android:layout_marginStart="210dp"
             android:layout_marginTop="29dp"
-            android:text="Jenis Sapi"/>
+            android:background="#ff920d"
+            android:entries="@array/jenisSapi"
+            android:prompt="@array/jenisSapi"
+            android:text="Jenis Sapi" />
 
     <Spinner
             android:id="@+id/jenisKelamin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="94dp"
+            android:layout_height="39dp"
             android:layout_below="@+id/jenisSapi"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="23dp" />
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="-41dp"
+            android:background="#ff920d"
+            android:entries="@array/jenisKelamin"
+            android:prompt="@array/jenisKelamin" />
 
     <EditText
-            android:id="@+id/editText7"
-            android:layout_width="133dp"
+            android:id="@+id/edtUmur"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/jenisKelamin"
             android:layout_alignParentStart="true"
             android:layout_marginStart="99dp"
             android:layout_marginTop="34dp"
             android:ems="10"
+            android:hint="Umur"
             android:inputType="textPersonName"
-            android:text="Umur" />
+            android:textColor="#000000"
+            android:textColorHint="#5A5A5A" />
 
     <TextView
             android:id="@+id/textView9"
@@ -96,54 +115,100 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="43dp"
             android:layout_marginEnd="97dp"
-            android:layout_toEndOf="@+id/editText7"
-            android:text="Bulan" />
+            android:layout_toEndOf="@+id/edtUmur"
+            android:text="Bulan"
+            android:textColor="#000000" />
 
     <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/edtHarga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText7"
+            android:layout_below="@+id/edtUmur"
             android:layout_alignParentStart="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:ems="10"
+            android:hint="Harga"
             android:inputType="textPersonName"
-            android:text="Harga" />
+            android:textColor="#000000"
+            android:textColorHint="#5A5A5A" />
+
+    <EditText
+            android:id="@+id/edtLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUmur"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Lokasi"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#5A5A5A" />
+
+    <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUmur"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="-375dp"
+            android:ems="10"
+            android:hint="Nama Pemilik"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#5A5A5A" />
+
+    <EditText
+            android:id="@+id/edtNohp"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUmur"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="-324dp"
+            android:ems="10"
+            android:hint="no. telp"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#5A5A5A" />
 
     <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText7"
+            android:layout_below="@+id/edtUmur"
             android:layout_alignParentStart="true"
             android:layout_marginStart="65dp"
             android:layout_marginTop="35dp"
-            android:text="Rp." />
+            android:text="Rp."
+            android:textColor="#000000"/>
 
-    <Button
-            android:id="@+id/button3"
-            android:layout_width="206dp"
-            android:layout_height="39dp"
-            android:layout_below="@+id/editText8"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="103dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="129dp"
-            android:text="Lokasi" />
-
-    <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+    <ImageView
+            android:id="@+id/imageButtonTambah"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            app:srcCompat="@drawable/tambah"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="25dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="39dp"
-            android:layout_marginBottom="28dp"
-            android:text="Tambah" />
+            android:layout_alignParentBottom="true"/>
+
+    <ImageView
+            android:id="@+id/imageButtonBatal"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            app:srcCompat="@drawable/batal"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
 
 
 </RelativeLayout>
