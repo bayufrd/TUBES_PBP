@@ -37,14 +37,14 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
     public void onBindViewHolder(@NonNull HolderData holder, int position) {
         SapiDAO dm = mList.get(position);
         holder.namapemilik.setText(dm.getNamapemilik());
-        holder.nohp.setText(dm.getNamapemilik());
-        holder.berat.setText(dm.getNamapemilik());
-        holder.warna.setText(dm.getNamapemilik());
-        holder.jenis.setText(dm.getNamapemilik());
-        holder.jeniskelamin.setText(dm.getNamapemilik());
-        holder.umur.setText(dm.getNamapemilik());
-        holder.harga.setText(dm.getNamapemilik());
-        holder.lokasi.setText(dm.getNamapemilik());
+        holder.nohp.setText(dm.getNohp());
+        holder.berat.setText(dm.getBerat());
+        holder.warna.setText(dm.getWarna());
+        holder.jenis.setText(dm.getJenis());
+        holder.jeniskelamin.setText(dm.getJeniskelamin());
+        holder.umur.setText(dm.getUmur());
+        holder.harga.setText(dm.getHarga());
+        holder.lokasi.setText(dm.getLokasi());
     }
 
     @Override
