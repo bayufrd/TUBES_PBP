@@ -11,8 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.tubes_pbp.api.ApiRegisterData;
 import com.example.tubes_pbp.api.Retroserver;
 import com.example.tubes_pbp.model.ResponsModel;
@@ -21,7 +19,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Register_Panel extends AppCompatActivity {
+public class Register_Panel extends Home_Panel {
 
     EditText nama,email,password, nohp;
     ProgressDialog pd;

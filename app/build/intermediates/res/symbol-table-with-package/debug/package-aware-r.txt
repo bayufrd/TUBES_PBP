@@ -1052,6 +1052,7 @@ id CTRL
 id FUNCTION
 id META
 id Parent
+id RecyclerTemp
 id SHIFT
 id SYM
 id TextViewaja
@@ -1193,12 +1194,10 @@ id notification_main_column
 id notification_main_column_container
 id outline
 id packed
-id panel_listsapi
 id parallax
 id parent
 id parentPanel
 id parent_matrix
-id password
 id percent
 id pin
 id progress_circular
@@ -1287,7 +1286,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id username
 id view_offset_helper
 id visible
 id withText

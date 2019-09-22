@@ -8,16 +8,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class Home_Panel extends AppCompatActivity {
 
-
+    private RecyclerView mRecycler;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.panel_home);
+
+        mRecycler = (RecyclerView) findViewById(R.id.RecyclerTemp);
 
         ImageView login = (ImageView) findViewById(R.id.imageButtonMasuk);
         ImageView daftar = (ImageView) findViewById(R.id.imageButtonDaftar);
@@ -44,5 +49,6 @@ public class Home_Panel extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
