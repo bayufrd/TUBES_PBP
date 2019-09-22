@@ -27,4 +27,11 @@ public interface ApiRequestBiodata {
                                    @Field("harga") String harga,
                                    @Field("lokasi") String lokasi);
 
+    @POST("update.php")
+    @FormUrlEncoded
+    Call<ResponsModel> updateData(@Field("nama") String nama,
+                                  @Field("email") String email,
+                                  @Field("password") String password,
+                                  @Field("nohp") String nohp);
+
 }
