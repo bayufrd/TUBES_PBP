@@ -42,7 +42,7 @@ public class Register_Panel extends AppCompatActivity {
         linkLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register_Panel.this, Home_Panel.class);
+                Intent intent = new Intent(Register_Panel.this, Login_Panel.class);
                 startActivity(intent);
             }
         });

@@ -1170,6 +1170,7 @@ id largeLabel
 id left
 id line1
 id line3
+id linkDaftar
 id linkHomeAfter
 id linkLogin
 id listMode
