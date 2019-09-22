@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\KULIAH\\PBP E\\TUBES\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\Marcelino\\Documents\\GitHub\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bayu Farid\\.gradle\\caches\\transforms-2\\files-2.1\\cc0eb2d607f7606e3cf72d3a84bc1f09\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Marcelino\\.gradle\\caches\\transforms-2\\files-2.1\\5de7d58fb46b2f6410f1e6d120b0b0c9\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bayu Farid\\.gradle\\caches\\transforms-2\\files-2.1\\58e5d65f8d1ca636f5ddda6d91621464\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Marcelino\\.gradle\\caches\\transforms-2\\files-2.1\\5716208648a9328969dd60af4a9b5220\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

@@ -12,10 +12,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="#FFFFFF"
-            tools:context=".RecycleAdapter">
+            tools:context=".RecycleAdapter"
+            android:id="@+id/Parent">
 
         <LinearLayout
-                android:id="@+id/Parent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">

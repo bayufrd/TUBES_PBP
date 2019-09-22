@@ -1057,6 +1057,7 @@ id RecyclerTemp
 id SHIFT
 id SYM
 id TextViewaja
+id Welcome
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1123,8 +1124,6 @@ id edtBerat
 id edtEmail
 id edtHarga
 id edtLokasi
-id edtNama
-id edtNama2
 id edtNohp
 id edtPassword
 id edtUmur
