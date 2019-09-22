@@ -18,8 +18,20 @@
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="invalid_username">Username tidak valid!</string>
+    <string name="invalid_password">Password harus lebih dari 5 karakter!</string>
+    <string name="login_failed">"Login gagal!"</string>
+    <string name="error_invalid_email">Email address anda salah!</string>
+    <string name="error_invalid_password">Password terlalu pendek!</string>
+    <string name="error_incorrect_password">Password tidak benar!</string>
+    <string name="error_field_required">Masih ada yang belum terisi!</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
+    <string name="no_text"> </string>
+    <string name="registration_message">Kamu belum mendaftar!. Gunakan tombol registrasi untuk menyelesaikan pendaftaran.</string>
+    <string name="registration_failed">Email sudah terpakai!</string>
+    <string-array name="autocomplete">
+    <item>bayu.farid36@gmail.com</item>
+    </string-array>
+
 
 </resources>

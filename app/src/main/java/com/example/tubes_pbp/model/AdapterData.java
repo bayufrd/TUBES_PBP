@@ -36,15 +36,15 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
     @Override
     public void onBindViewHolder(@NonNull HolderData holder, int position) {
         SapiDAO dm = mList.get(position);
-        holder.namapemilik.setText(dm.getNamapemilik());
-        holder.nohp.setText(dm.getNamapemilik());
-        holder.berat.setText(dm.getNamapemilik());
-        holder.warna.setText(dm.getNamapemilik());
-        holder.jenis.setText(dm.getNamapemilik());
-        holder.jeniskelamin.setText(dm.getNamapemilik());
-        holder.umur.setText(dm.getNamapemilik());
-        holder.harga.setText(dm.getNamapemilik());
-        holder.lokasi.setText(dm.getNamapemilik());
+        holder.namapemilik.setText("Nama Pemilik\t: "+dm.getNamapemilik()+"\n");
+        holder.nohp.setText("No. Telp\t: "+dm.getNohp()+"\n");
+        holder.berat.setText("Berat\t: "+dm.getBerat()+" KG\n");
+        holder.warna.setText("Warna\t: "+dm.getWarna()+"\n");
+        holder.jenis.setText("Jenis\t: "+dm.getJenis()+"\n");
+        holder.jeniskelamin.setText("Jenis Kelamin\t: "+dm.getJeniskelamin()+"\n");
+        holder.umur.setText("Umur\t: "+dm.getUmur()+"\n");
+        holder.harga.setText("Harga\t: Rp. "+dm.getHarga()+",-\n");
+        holder.lokasi.setText("Lokasi\t: "+dm.getLokasi()+"\n");
     }
 
     @Override

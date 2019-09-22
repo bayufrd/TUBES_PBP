@@ -25,6 +25,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array autocomplete
 array jenisKelamin
 array jenisSapi
 attr actionBarDivider
@@ -1085,6 +1086,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnLogin
 id btnTambah
 id button2
 id button3
@@ -1133,6 +1135,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id failed_login
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1179,7 +1182,6 @@ id linkLogin
 id listMode
 id list_item
 id loading
-id login
 id masked
 id message
 id middle
@@ -1423,6 +1425,10 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string error_field_required
+string error_incorrect_password
+string error_invalid_email
+string error_invalid_password
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1430,13 +1436,17 @@ string invalid_password
 string invalid_username
 string login_failed
 string mtrl_chip_close_icon_content_description
+string no_text
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string permission_rationale
 string prompt_email
 string prompt_password
+string registration_failed
+string registration_message
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_login__panel

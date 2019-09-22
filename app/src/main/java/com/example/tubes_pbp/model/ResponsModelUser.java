@@ -5,6 +5,7 @@ import com.example.tubes_pbp.UserDAO;
 import java.util.List;
 
 public class ResponsModelUser {
+    public String isLogin;
     String kode,pesan;
 
     List<UserDAO> result;
