@@ -1,9 +1,6 @@
 package com.example.tubes_pbp.api;
 
-import com.example.tubes_pbp.SapiDAO;
 import com.example.tubes_pbp.model.ResponsModel;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -13,7 +10,7 @@ import retrofit2.http.POST;
 
 public interface ApiRequestBiodata {
     @GET("read.php")
-    Call<List<SapiDAO>> getBiodata();
+    Call<ResponsModel> getBiodata();
 
     //@GET("read.php")
     //Call<SapiDAO> getBiodata(@Path("id") String id);
