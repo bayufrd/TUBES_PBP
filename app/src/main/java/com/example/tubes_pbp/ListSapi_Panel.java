@@ -30,7 +30,7 @@ public class ListSapi_Panel extends HomeAfter_Panel {
         setContentView(R.layout.panel_listsapi);
 
         mListSapi= new ArrayList<>();
-        recyclerView=(RecyclerView) recyclerView.findViewById(R.id.panel_listsapi);
+        recyclerView = (RecyclerView) recyclerView.findViewById(R.id.panel_listsapi);
         recycleAdapter = new RecycleAdapter(this,mListSapi);
         RecyclerView.LayoutManager mLayoutManager= new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);

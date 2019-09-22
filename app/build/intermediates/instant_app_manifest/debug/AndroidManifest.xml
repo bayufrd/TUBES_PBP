@@ -22,7 +22,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.tubes_pbp.HomeAfter_Panel"
+            android:name="com.example.tubes_pbp.Home_Panel"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,14 +30,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.tubes_pbp.Login_Panel" />
-        <activity android:name="com.example.tubes_pbp.Register_Panel" />
+        <activity
+            android:name="com.example.tubes_pbp.Login_Panel"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.example.tubes_pbp.Register_Panel"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name="com.example.tubes_pbp.TambahSapi_Panel"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="com.example.tubes_pbp.EditAkun_Panel" />
-        <activity android:name="com.example.tubes_pbp.Home_Panel" />
+        <activity
+            android:name="com.example.tubes_pbp.EditAkun_Panel"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.example.tubes_pbp.HomeAfter_Panel"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name="com.example.tubes_pbp.EditSapi_Panel" />
+        <activity
+            android:name="com.example.tubes_pbp.SapiSaya_Panel"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.tubes_pbp.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

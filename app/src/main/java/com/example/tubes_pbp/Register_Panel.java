@@ -1,121 +1,104 @@
 package com.example.tubes_pbp;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.IOException;
+import com.example.tubes_pbp.api.ApiRegisterData;
+import com.example.tubes_pbp.api.Retroserver;
+import com.example.tubes_pbp.model.ResponsModel;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Register_Panel extends Login_Panel{
+public class Register_Panel extends AppCompatActivity {
 
-    EditText etNama;
-    EditText etEmail;
-    EditText etPassword;
-    ImageView btnRegister;
-    ProgressDialog loading;
-
-    Context mContext;
-    BaseApiService mApiService;
-
-    private TextView linkLogin;
-    private Button btnLogin;
+    EditText nama,email,password, nohp;
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.panel_register);
+        nama = (EditText) findViewById(R.id.edtNama);
+        email = (EditText) findViewById(R.id.edtEmail);
+        password = (EditText) findViewById(R.id.edtPassword);
+        nohp = (EditText) findViewById(R.id.edtNohp);
+        Button btn = (Button) findViewById(R.id.ButtonUbah);
+        TextView linkLogin = (TextView) findViewById(R.id.linkLogin);
+        pd = new ProgressDialog(this);
 
-        mContext = this;
-        mApiService = UtilsApi.getAPIService();
-
-        initComponents2();
-
-        linkLogin = (TextView) findViewById(R.id.linkLogin);
-        linkLogin.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent i= new Intent(Register_Panel.this, Login_Panel.class);
-                startActivity(i);
-            }
-        });
-
-        btnLogin = (Button)findViewById(R.id.btnLogin);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        linkLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Register_Panel.this, Login_Panel.class);
-                startActivity(i);
+                Intent intent = new Intent(Register_Panel.this, Home_Panel.class);
+                startActivity(intent);
+            }
+        });
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                OnClickRegister();
             }
         });
     }
+    public void OnClickRegister() {
+        if(
+                nama.getText().toString().isEmpty() ||
+                        email.getText().toString().isEmpty() ||
+                        password.getText().toString().isEmpty() ||
+                        nohp.getText().toString().isEmpty())
 
-    private void initComponents2() {
-        etNama = (EditText) findViewById(R.id.etNama);
-        etEmail = (EditText) findViewById(R.id.etEmail);
-        etPassword = (EditText) findViewById(R.id.etPassword);
-        btnRegister = (ImageView) findViewById(R.id.btnRegister);
+        {
+            Toast.makeText(this, "Ada yang belum di isi :(",Toast.LENGTH_SHORT).show();
+        }else{
+            pd.setMessage("sedang mengirim data ...");
+            pd.setCancelable(false);
+            pd.show();
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loading = ProgressDialog.show(mContext, null, "Harap Tunggu...", true, false);
-                requestRegister();
-            }
+            ApiRegisterData api = Retroserver.getClient().create(ApiRegisterData.class);
+            Call<ResponsModel> UserDAOCALL = api.sendUser(nama.getText().toString(),
+                    email.getText().toString(),password.getText().toString(),nohp.getText().toString());
 
-            private void requestRegister() {
-                    mApiService.registerRequest(etNama.getText().toString(),
-                            etEmail.getText().toString(),
-                            etPassword.getText().toString())
-                            .enqueue(new Callback<ResponseBody>() {
-                                @Override
-                                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                                    if (response.isSuccessful()){
-                                        Log.i("debug", "onResponse: BERHASIL");
-                                        loading.dismiss();
-                                        try {
-                                            JSONObject jsonRESULTS = new JSONObject(response.body().string());
-                                            if (jsonRESULTS.getString("error").equals("false")){
-                                                Toast.makeText(mContext, "BERHASIL REGISTRASI", Toast.LENGTH_SHORT).show();
-                                                startActivity(new Intent(mContext, Login_Panel.class));
-                                            } else {
-                                                String error_message = jsonRESULTS.getString("error_msg");
-                                                Toast.makeText(mContext, error_message, Toast.LENGTH_SHORT).show();
-                                            }
-                                        } catch (JSONException e) {
-                                            e.printStackTrace();
-                                        } catch (IOException e) {
-                                            e.printStackTrace();
-                                        }
-                                    } else {
-                                        Log.i("debug", "onResponse: GA BERHASIL");
-                                        loading.dismiss();
-                                    }
-                                }
+            UserDAOCALL.enqueue(new Callback<ResponsModel>() {
 
-                                @Override
-                                public void onFailure(Call<ResponseBody> call, Throwable t) {
-                                    Log.e("debug", "onFailure: ERROR > " + t.getMessage());
-                                    Toast.makeText(mContext, "Koneksi Internet Bermasalah", Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                }}
-            );}
+                @Override
+                public void onResponse(Call<ResponsModel> call, Response<ResponsModel> response) {
+                    Log.d("RETRO", "response : "+ response.body().toString());
+                    String kode = response.body().getKode();
+                    if(kode.equals("1")){
+                        Toast.makeText(Register_Panel.this, "Register berhasil :D",Toast.LENGTH_SHORT).show();
+                        pd.hide();
+                        startIntent();
+                    }else{
+                        Toast.makeText(Register_Panel.this,"User gagal ditambah :(",Toast.LENGTH_SHORT).show();
+                        pd.hide();
+                    }
 
+                }
+                @Override
+                public  void onFailure(Call<ResponsModel> call, Throwable t){
+                    pd.hide();
+                    Log.d("RETRO", "Failure : " + "Gagal Menambahkan data User :(, cek koneksi");
+                    Toast.makeText(Register_Panel.this,"Gagal Menambahkan data User :(, cek koneksi",Toast.LENGTH_SHORT).show();
+                }
+
+            });
+        }
     }
-
+    private void startIntent() {
+        Intent intent= new Intent(getApplicationContext(), HomeAfter_Panel.class);
+        startActivity(intent);
+    }
+}

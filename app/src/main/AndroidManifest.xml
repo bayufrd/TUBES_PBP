@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.tubes_pbp">
+        package="com.example.tubes_pbp">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,21 +11,33 @@
             android:roundIcon="@drawable/logo"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".HomeAfter_Panel"
+        <activity
+                android:name=".Home_Panel"
                 android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login_Panel"></activity>
-        <activity android:name=".Register_Panel"></activity>
-        <activity android:name=".TambahSapi_Panel"
+        <activity
+                android:name=".Login_Panel"
+                android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+                android:name=".Register_Panel"
                 android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".EditAkun_Panel"></activity>
-        <activity android:name=".Home_Panel"></activity>
-        <activity android:name=".EditSapi_Panel"></activity>
+        <activity
+                android:name=".TambahSapi_Panel"
+                android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+                android:name=".EditAkun_Panel"
+                android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+                android:name=".HomeAfter_Panel"
+                android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".EditSapi_Panel" />
+        <activity android:name=".SapiSaya_Panel"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
 
 </manifest>

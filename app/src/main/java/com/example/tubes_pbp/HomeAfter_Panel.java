@@ -3,28 +3,17 @@ package com.example.tubes_pbp;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.tubes_pbp.api.ApiRequestBiodata;
-import com.example.tubes_pbp.api.Retroserver;
-import com.example.tubes_pbp.model.ResponsModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-public class HomeAfter_Panel extends Home_Panel {
+public class HomeAfter_Panel extends Login_Panel {
 
         private RecyclerView mRecycler;
         private RecyclerView.Adapter mAdapter;
@@ -45,6 +34,15 @@ public class HomeAfter_Panel extends Home_Panel {
         mRecycler.setLayoutManager(mManager);
         ImageView tambah = (ImageView) findViewById(R.id.imageButtonPluss);
         ImageView edit = (ImageView) findViewById(R.id.imageButtonProfil);
+        ImageView mysapi = (ImageView) findViewById(R.id.imageButtonSapisaya);
+
+        mysapi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeAfter_Panel.this, SapiSaya_Panel.class);
+                startActivity(intent);
+            }
+        });
 
         tambah.setOnClickListener(new View.OnClickListener() {
             @Override
