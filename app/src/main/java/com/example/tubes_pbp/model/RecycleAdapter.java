@@ -1,18 +1,15 @@
 package com.example.tubes_pbp.model;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tubes_pbp.EditSapi_Panel;
 import com.example.tubes_pbp.R;
 import com.example.tubes_pbp.SapiDAO;
 
@@ -45,15 +42,6 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
         holder.umur.setText("Umur\t: "+SapiDAO.getUmur()+"\n");
         holder.harga.setText("Harga\t: Rp. "+SapiDAO.getHarga()+",-\n");
         holder.lokasi.setText("Lokasi\t: "+SapiDAO.getLokasi()+"\n");
-
-
-        holder.mParent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(view.getContext(),"Oh You touch Me",Toast.LENGTH_SHORT).show();
-
-            }
-        });
     }
     public int getItemCount() {
         return result.size();
@@ -61,7 +49,6 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
 
     public  class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView namapemilik, nohp, berat, warna, jenis, jeniskelamin, umur, harga, lokasi;
-        private LinearLayout mParent;
 
         public MyViewHolder (@NonNull View itemView)
         {
@@ -75,14 +62,11 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
             umur=itemView.findViewById(R.id.Bumur);
             harga=itemView.findViewById(R.id.Bharga);
             lokasi=itemView.findViewById(R.id.Blokasi);
-            mParent=itemView.findViewById(R.id.Parent);
         }
 
         @Override
         public void onClick(View view) {
             Toast.makeText(context,"Bentar belum ku buat",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(view.getContext(), EditSapi_Panel.class);
-            context.startActivity(intent);
         }
     }
 }
