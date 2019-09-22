@@ -16,65 +16,192 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/Parent">
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+            android:text="Nama Pemilik"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Bnamapemilik"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama Pemilik" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
+
         <TextView
                 android:id="@+id/Bjenis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jenis" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Bjeniskelamin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jenis Kelamin" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Warna"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Bwarna"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Warna" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Berat"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Bberat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Berat" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Umur"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Bumur"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Umur" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Harga"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Bharga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Harga" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="No. Telp"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Bnohp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No. Telp" />
+                android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Lokasi"/>
+
+        <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
         <TextView
                 android:id="@+id/Blokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lokasi" />
-
-
-
+                android:text="" />
     </LinearLayout>
+
 
 
 </LinearLayout></androidx.cardview.widget.CardView>

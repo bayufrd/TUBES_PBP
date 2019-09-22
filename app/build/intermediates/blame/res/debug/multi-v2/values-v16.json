@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\Marcelino\\Documents\\GitHub\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dienn\\.gradle\\caches\\transforms-2\\files-2.1\\e6192ebed4ceaafd9c4843df4763bd3a\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Marcelino\\.gradle\\caches\\transforms-2\\files-2.1\\5716208648a9328969dd60af4a9b5220\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dienn\\.gradle\\caches\\transforms-2\\files-2.1\\85708e1462940228490706871d13edd8\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Marcelino\\.gradle\\caches\\transforms-2\\files-2.1\\665e6a2d54e7ba2ece9089cd9252c240\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
