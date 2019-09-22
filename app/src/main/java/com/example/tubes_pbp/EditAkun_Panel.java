@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.tubes_pbp.Util.SessionManager;
 import com.example.tubes_pbp.api.ApiRequestBiodata;
 import com.example.tubes_pbp.api.Retroserver;
 import com.example.tubes_pbp.model.ResponsModel;
@@ -21,6 +22,8 @@ import retrofit2.Response;
 public class EditAkun_Panel extends Home_Panel{
     EditText nama,email,password, nohp;
     ProgressDialog pd;
+    Button logout;
+    SessionManager sm;
 
     @Override
     protected void onCreate(Bundle savedInstanceStata) {
@@ -31,8 +34,18 @@ public class EditAkun_Panel extends Home_Panel{
         email = (EditText) findViewById(R.id.edtEmail);
         password = (EditText) findViewById(R.id.edtPassword);
         nohp = (EditText) findViewById(R.id.edtNohp);
-        Button btn = (Button) findViewById(R.id.buttonUbah);
+        Button btn = (Button) findViewById(R.id.buttonLogout);
         pd = new ProgressDialog(this);
+        logout = (Button) findViewById(R.id.buttonLogout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sm.logout();
+                sm.checkLogin();
+            }
+        });
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

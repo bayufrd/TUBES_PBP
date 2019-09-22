@@ -98,7 +98,19 @@
             app:layout_constraintTop_toBottomOf="@+id/edtNohp" />
 
     <Button
-            android:id="@+id/buttonUbah"
+            android:id="@+id/buttonLogout"
+            android:layout_width="91dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/hapus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+            android:id="@+id/buttonUbah2"
             android:layout_width="127dp"
             android:layout_height="55dp"
             android:layout_marginStart="56dp"

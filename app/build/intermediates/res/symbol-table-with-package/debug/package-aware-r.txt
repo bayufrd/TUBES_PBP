@@ -1088,8 +1088,9 @@ id bottom
 id btnTambah
 id button2
 id button3
+id buttonLogout
 id buttonPanel
-id buttonUbah
+id buttonUbah2
 id center
 id center_horizontal
 id center_vertical
@@ -1121,6 +1122,7 @@ id edtEmail
 id edtHarga
 id edtLokasi
 id edtNama
+id edtNama2
 id edtNohp
 id edtPassword
 id edtUmur
@@ -1261,10 +1263,10 @@ id textView
 id textView10
 id textView12
 id textView2
-id textView3
 id textView4
 id textView5
 id textView6
+id textView7
 id textView9
 id text_input_password_toggle
 id textinput_counter

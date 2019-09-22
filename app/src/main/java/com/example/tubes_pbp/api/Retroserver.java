@@ -21,4 +21,5 @@ public class Retroserver {
         }
         return retrofit;
     }
+    public static ApiRegisterData getRequestService() { return getClient().create(ApiRegisterData.class);}
 }

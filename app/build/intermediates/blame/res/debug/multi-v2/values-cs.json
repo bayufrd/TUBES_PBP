@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-cs\\values-cs.xml",
+            "outputFile": "E:\\KULIAH\\Semester V\\PBP E\\TUBES\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-cs\\values-cs.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dienn\\.gradle\\caches\\transforms-2\\files-2.1\\e6192ebed4ceaafd9c4843df4763bd3a\\res\\values-cs\\values-cs.xml",
+                    "source": "C:\\Users\\Windows\\.gradle\\caches\\transforms-2\\files-2.1\\94f0f27ce151cc33c2ba10e9f9ffbc52\\res\\values-cs\\values-cs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dienn\\.gradle\\caches\\transforms-2\\files-2.1\\85708e1462940228490706871d13edd8\\res\\values-cs\\values-cs.xml",
+                    "source": "C:\\Users\\Windows\\.gradle\\caches\\transforms-2\\files-2.1\\4ef061bbe1fb89f04d118530313caef3\\res\\values-cs\\values-cs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

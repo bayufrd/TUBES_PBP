@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.example.tubes_pbp.api.ApiRegisterData;
 import com.example.tubes_pbp.api.Retroserver;
-import com.example.tubes_pbp.model.ResponsModel;
+import com.example.tubes_pbp.model.ResponsModelUser;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -66,13 +66,13 @@ public class Register_Panel extends Home_Panel {
             pd.show();
 
             ApiRegisterData api = Retroserver.getClient().create(ApiRegisterData.class);
-            Call<ResponsModel> UserDAOCALL = api.sendUser(nama.getText().toString(),
+            Call<ResponsModelUser> UserDAOCALL = api.sendUser(nama.getText().toString(),
                     email.getText().toString(),password.getText().toString(),nohp.getText().toString());
 
-            UserDAOCALL.enqueue(new Callback<ResponsModel>() {
+            UserDAOCALL.enqueue(new Callback<ResponsModelUser>() {
 
                 @Override
-                public void onResponse(Call<ResponsModel> call, Response<ResponsModel> response) {
+                public void onResponse(Call<ResponsModelUser> call, Response<ResponsModelUser> response) {
                     Log.d("RETRO", "response : "+ response.body().toString());
                     String kode = response.body().getKode();
                     if(kode.equals("1")){
@@ -86,7 +86,7 @@ public class Register_Panel extends Home_Panel {
 
                 }
                 @Override
-                public  void onFailure(Call<ResponsModel> call, Throwable t){
+                public  void onFailure(Call<ResponsModelUser> call, Throwable t){
                     pd.hide();
                     Log.d("RETRO", "Failure : " + "Gagal Menambahkan data User :(, cek koneksi");
                     Toast.makeText(Register_Panel.this,"Gagal Menambahkan data User :(, cek koneksi",Toast.LENGTH_SHORT).show();

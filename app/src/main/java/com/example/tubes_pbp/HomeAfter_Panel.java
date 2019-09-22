@@ -7,16 +7,19 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tubes_pbp.Util.SessionManager;
 import com.example.tubes_pbp.api.ApiRequestBiodata;
 import com.example.tubes_pbp.api.Retroserver;
 import com.example.tubes_pbp.model.AdapterData;
 import com.example.tubes_pbp.model.ResponsModel;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import retrofit2.Call;
@@ -25,6 +28,8 @@ import retrofit2.Response;
 
 public class HomeAfter_Panel extends Login_Panel {
 
+        TextView nama;
+        SessionManager sm;
         private RecyclerView mRecycler;
         private RecyclerView.Adapter mAdapter;
         private RecyclerView.LayoutManager mManager;
@@ -37,6 +42,13 @@ public class HomeAfter_Panel extends Login_Panel {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceStata);
         setContentView(R.layout.panel_home_after);
+        sm = new SessionManager(HomeAfter_Panel.this);
+        HashMap<String,String> map = sm.getDetailLogin();
+        sm.checkLogin();
+        nama = (TextView) findViewById(R.id.edtNama);
+        Intent data = getIntent();
+
+        nama.setText(map.get(sm.KEY_NAMA));
 
         pd = new ProgressDialog(this);
         mRecycler = (RecyclerView) findViewById(R.id.RecyclerTemp);

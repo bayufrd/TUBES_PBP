@@ -6,7 +6,8 @@ import java.util.List;
 
 public class ResponsModel {
 
-    String kode, pesan;
+    String kode;
+    String pesan;
     List<SapiDAO> result;
 
     public List<SapiDAO> getResult() {
