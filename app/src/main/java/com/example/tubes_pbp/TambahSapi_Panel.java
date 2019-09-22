@@ -32,7 +32,7 @@ public class TambahSapi_Panel extends HomeAfter_Panel{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.panel_tambah_sapi);
 
-        namapemilik = (EditText) findViewById(R.id.edtNama);
+        namapemilik = (EditText) findViewById(R.id.Welcome);
         nohp = (EditText) findViewById(R.id.edtNohp);
         berat = (EditText) findViewById(R.id.edtBerat);
         warna = (EditText) findViewById(R.id.edtWarna);

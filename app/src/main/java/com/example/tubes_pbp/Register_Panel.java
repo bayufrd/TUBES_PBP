@@ -29,7 +29,7 @@ public class Register_Panel extends Home_Panel {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.panel_register);
-        nama = (EditText) findViewById(R.id.edtNama);
+        nama = (EditText) findViewById(R.id.Welcome);
         email = (EditText) findViewById(R.id.edtEmail);
         password = (EditText) findViewById(R.id.edtPassword);
         nohp = (EditText) findViewById(R.id.edtNohp);

@@ -2,6 +2,8 @@ package com.example.tubes_pbp.model;
 
 import com.example.tubes_pbp.UserDAO;
 
+import org.json.JSONTokener;
+
 import java.util.List;
 
 public class ResponsModelUser {
@@ -32,5 +34,9 @@ public class ResponsModelUser {
 
     public void setPesan(String pesan) {
         this.pesan = pesan;
+    }
+
+    public JSONTokener string() {
+        return null;
     }
 }

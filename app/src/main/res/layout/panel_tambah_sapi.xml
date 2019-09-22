@@ -150,7 +150,7 @@
             android:textColorHint="#5A5A5A" />
 
     <EditText
-            android:id="@+id/edtNama"
+            android:id="@+id/Welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtUmur"

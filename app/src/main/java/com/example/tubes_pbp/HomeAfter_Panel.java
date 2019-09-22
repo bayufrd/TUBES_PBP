@@ -45,7 +45,7 @@ public class HomeAfter_Panel extends Login_Panel {
         sm = new SessionManager(HomeAfter_Panel.this);
         HashMap<String,String> map = sm.getDetailLogin();
         sm.checkLogin();
-        nama = (TextView) findViewById(R.id.edtNama);
+        nama = (TextView) findViewById(R.id.Welcome);
         Intent data = getIntent();
 
         nama.setText(map.get(sm.KEY_NAMA));
