@@ -1051,6 +1051,7 @@ id Bwarna
 id CTRL
 id FUNCTION
 id META
+id Parent
 id RecyclerTemp
 id SHIFT
 id SYM

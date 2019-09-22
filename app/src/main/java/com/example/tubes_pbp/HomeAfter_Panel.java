@@ -25,11 +25,11 @@ import retrofit2.Response;
 
 public class HomeAfter_Panel extends Login_Panel {
 
-        private RecyclerView mRecycler;
-        private RecyclerView.Adapter mAdapter;
-        private RecyclerView.LayoutManager mManager;
-        private List<SapiDAO> mItems = new ArrayList<>();
-        ProgressDialog pd;
+    private RecyclerView mRecycler;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mManager;
+    private List<SapiDAO> mItems = new ArrayList<>();
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceStata) {
@@ -98,5 +98,5 @@ public class HomeAfter_Panel extends Login_Panel {
             }
         });
 
-       }
+    }
 }

@@ -1,6 +1,7 @@
 package com.example.tubes_pbp.model;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tubes_pbp.EditSapi_Panel;
 import com.example.tubes_pbp.R;
 import com.example.tubes_pbp.SapiDAO;
 
@@ -49,6 +51,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
             @Override
             public void onClick(View view) {
                 Toast.makeText(view.getContext(),"Oh You touch Me",Toast.LENGTH_SHORT).show();
+
             }
         });
     }
@@ -72,12 +75,14 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
             umur=itemView.findViewById(R.id.Bumur);
             harga=itemView.findViewById(R.id.Bharga);
             lokasi=itemView.findViewById(R.id.Blokasi);
-
+            mParent=itemView.findViewById(R.id.Parent);
         }
 
         @Override
         public void onClick(View view) {
             Toast.makeText(context,"Bentar belum ku buat",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(view.getContext(), EditSapi_Panel.class);
+            context.startActivity(intent);
         }
     }
 }

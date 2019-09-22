@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -55,6 +56,7 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
 
     class HolderData extends RecyclerView.ViewHolder{
         TextView namapemilik, nohp, berat, warna, jenis, jeniskelamin, umur, harga, lokasi;
+        LinearLayout mParent;
         public HolderData (View view){
 
             super(view);
