@@ -732,11 +732,11 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnHapus
 id btnLogin
 id btnRegister
 id btnTambah
 id button
-id button2
 id button3
 id buttonPanel
 id center

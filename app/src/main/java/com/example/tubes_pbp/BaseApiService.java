@@ -19,4 +19,8 @@ public interface BaseApiService {
     Call<ResponseBody> registerRequest(@Field("nama") String nama,
                                        @Field("email") String email,
                                        @Field("password") String password);
+
+
+
+
 }

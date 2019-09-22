@@ -5,6 +5,7 @@ import com.example.tubes_pbp.model.ResponsModel;
 
 import java.util.List;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -30,4 +31,7 @@ public interface ApiRequestBiodata {
                                    @Field("harga") String harga,
                                    @Field("lokasi") String lokasi);
 
+    @FormUrlEncoded
+    @POST("delete.php")
+    Call<ResponseBody> deleteData(@Field("id") String id);
 }

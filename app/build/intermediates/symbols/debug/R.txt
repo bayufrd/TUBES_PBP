@@ -731,11 +731,11 @@ int id barrier 0x7f080028
 int id beginning 0x7f080029
 int id blocking 0x7f08002a
 int id bottom 0x7f08002b
-int id btnLogin 0x7f08002c
-int id btnRegister 0x7f08002d
-int id btnTambah 0x7f08002e
-int id button 0x7f08002f
-int id button2 0x7f080030
+int id btnHapus 0x7f08002c
+int id btnLogin 0x7f08002d
+int id btnRegister 0x7f08002e
+int id btnTambah 0x7f08002f
+int id button 0x7f080030
 int id button3 0x7f080031
 int id buttonPanel 0x7f080032
 int id center 0x7f080033
