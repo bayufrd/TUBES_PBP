@@ -150,7 +150,7 @@
             android:textColorHint="#5A5A5A" />
 
     <EditText
-            android:id="@+id/Welcome"
+            android:id="@+id/Welcome1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtUmur"
@@ -191,7 +191,7 @@
             android:textColor="#000000"/>
 
     <ImageView
-            android:id="@+id/imageButtonTambah"
+            android:id="@+id/imageButtonUbah"
             android:layout_width="110dp"
             android:layout_height="38dp"
             app:srcCompat="@drawable/tambah"
@@ -201,7 +201,7 @@
             android:layout_alignParentBottom="true"/>
 
     <ImageView
-            android:id="@+id/imageButtonBatal"
+            android:id="@+id/imageButtonHapus"
             android:layout_width="110dp"
             android:layout_height="38dp"
             app:srcCompat="@drawable/batal"

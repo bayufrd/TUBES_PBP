@@ -44,7 +44,9 @@
         <activity
             android:name="com.example.tubes_pbp.HomeAfter_Panel"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="com.example.tubes_pbp.EditSapi_Panel" />
+        <activity
+            android:name="com.example.tubes_pbp.EditSapi_Panel"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name="com.example.tubes_pbp.SapiSaya_Panel"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

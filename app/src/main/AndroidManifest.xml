@@ -35,7 +35,8 @@
         <activity
                 android:name=".HomeAfter_Panel"
                 android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".EditSapi_Panel" />
+        <activity android:name=".EditSapi_Panel"
+                android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".SapiSaya_Panel"
                 android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>

@@ -32,7 +32,7 @@ public class TambahSapi_Panel extends HomeAfter_Panel{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.panel_tambah_sapi);
 
-        namapemilik = (EditText) findViewById(R.id.Welcome);
+        namapemilik = (EditText) findViewById(R.id.Welcome1);
         nohp = (EditText) findViewById(R.id.edtNohp);
         berat = (EditText) findViewById(R.id.edtBerat);
         warna = (EditText) findViewById(R.id.edtWarna);
@@ -41,8 +41,8 @@ public class TambahSapi_Panel extends HomeAfter_Panel{
         lokasi = (EditText) findViewById(R.id.edtLokasi);
         jenis = (Spinner) findViewById(R.id.jenisSapi);
         jeniskelamin = (Spinner) findViewById(R.id.jenisKelamin);
-        ImageView tambah = (ImageView) findViewById(R.id.imageButtonTambah);
-        ImageView batal = (ImageView) findViewById(R.id.imageButtonBatal);
+        ImageView tambah = (ImageView) findViewById(R.id.imageButtonUbah);
+        ImageView batal = (ImageView) findViewById(R.id.imageButtonHapus);
         pd = new ProgressDialog(this);
 
 

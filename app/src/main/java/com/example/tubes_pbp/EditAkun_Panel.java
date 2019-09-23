@@ -30,7 +30,7 @@ public class EditAkun_Panel extends Home_Panel{
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceStata);
         setContentView(R.layout.panel_edit_akun);
-        nama = (EditText) findViewById(R.id.Welcome);
+        nama = (EditText) findViewById(R.id.Welcome1);
         email = (EditText) findViewById(R.id.edtEmail);
         password = (EditText) findViewById(R.id.edtPassword);
         nohp = (EditText) findViewById(R.id.edtNohp);
