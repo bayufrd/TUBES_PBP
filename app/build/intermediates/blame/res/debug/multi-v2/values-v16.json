@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\KULIAH\\PBP E\\TUBES\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "D:\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bayu Farid\\.gradle\\caches\\transforms-2\\files-2.1\\847326f458ad86e5972c6fa20c9cb9bf\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Bayu Farid\\.gradle\\caches\\transforms-2\\files-2.1\\58e5d65f8d1ca636f5ddda6d91621464\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Dienn\\.gradle\\caches\\transforms-2\\files-2.1\\e6192ebed4ceaafd9c4843df4763bd3a\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dienn\\.gradle\\caches\\transforms-2\\files-2.1\\85708e1462940228490706871d13edd8\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

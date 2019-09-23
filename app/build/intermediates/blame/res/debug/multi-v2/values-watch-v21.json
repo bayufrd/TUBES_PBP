@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\KULIAH\\PBP E\\TUBES\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "D:\\TUBES_PBP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bayu Farid\\.gradle\\caches\\transforms-2\\files-2.1\\58e5d65f8d1ca636f5ddda6d91621464\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\Dienn\\.gradle\\caches\\transforms-2\\files-2.1\\e6192ebed4ceaafd9c4843df4763bd3a\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

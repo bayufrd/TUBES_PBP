@@ -34,4 +34,15 @@ public interface ApiRequestBiodata {
                                   @Field("password") String password,
                                   @Field("nohp") String nohp);
 
+    @POST("update.php")
+    @FormUrlEncoded
+    Call<ResponsModel> updateDataSapi(@Field("namapemilik") String namapemilik,
+                                   @Field("nohp") String nohp,
+                                   @Field("berat") String berat,
+                                   @Field("warna") String warna,
+                                   @Field("jenis") String jenis,
+                                   @Field("jeniskelamin") String jeniskelamin,
+                                   @Field("umur") String umur,
+                                   @Field("harga") String harga,
+                                   @Field("lokasi") String lokasi);
 }
