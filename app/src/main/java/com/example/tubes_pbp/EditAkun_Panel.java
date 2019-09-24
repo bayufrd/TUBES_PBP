@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.tubes_pbp.Util.SessionManager;
-import com.example.tubes_pbp.api.ApiRequestBiodata;
+import com.example.tubes_pbp.api.ApiRegisterData;
 import com.example.tubes_pbp.api.Retroserver;
 import com.example.tubes_pbp.model.ResponsModel;
 
@@ -38,7 +38,6 @@ public class EditAkun_Panel extends Home_Panel{
         pd = new ProgressDialog(this);
         logout = (Button) findViewById(R.id.buttonLogout);
 
-        Button batal = (Button) findViewById(R.id.imageButtonBatal);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,7 +76,7 @@ public class EditAkun_Panel extends Home_Panel{
             pd.setCancelable(false);
             pd.show();
 
-            ApiRequestBiodata api = Retroserver.getClient().create(ApiRequestBiodata.class);
+            ApiRegisterData api = Retroserver.getClient().create(ApiRegisterData.class);
             Call<ResponsModel> UserDAOCALL = api.updateData(nama.getText().toString(),
                     email.getText().toString(),password.getText().toString(),nohp.getText().toString());
 

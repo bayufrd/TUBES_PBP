@@ -1,5 +1,6 @@
 package com.example.tubes_pbp.api;
 
+import com.example.tubes_pbp.model.ResponsModel;
 import com.example.tubes_pbp.model.ResponsModelUser;
 
 import retrofit2.Call;
@@ -16,6 +17,12 @@ public interface ApiRegisterData {
     Call<ResponsModelUser> loginRequest(@Field("email") String email,
                                     @Field("password") String password);
     //@GET("read.php")
+    @POST("update.php")
+    @FormUrlEncoded
+    Call<ResponsModel> updateData(@Field("nama") String nama,
+                                  @Field("email") String email,
+                                  @Field("password") String password,
+                                  @Field("nohp") String nohp);
     //Call<SapiDAO> getBiodata(@Path("id") String id);
 
     @POST("register.php")
