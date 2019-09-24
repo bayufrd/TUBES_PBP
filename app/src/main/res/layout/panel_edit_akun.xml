@@ -103,8 +103,8 @@
             android:layout_height="35dp"
             android:layout_marginStart="160dp"
             android:layout_marginEnd="160dp"
-            android:layout_marginBottom="37dp"
-            android:background="@drawable/hapus"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/batal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

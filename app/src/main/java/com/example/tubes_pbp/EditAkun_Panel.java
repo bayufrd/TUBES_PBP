@@ -38,6 +38,7 @@ public class EditAkun_Panel extends Home_Panel{
         pd = new ProgressDialog(this);
         logout = (Button) findViewById(R.id.buttonLogout);
 
+        Button batal = (Button) findViewById(R.id.imageButtonBatal);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -52,7 +52,7 @@ public class EditSapi_Panel extends Home_Panel {
         batal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EditSapi_Panel.this, Home_Panel.class);
+                Intent intent = new Intent(EditSapi_Panel.this, HomeAfter_Panel.class);
                 startActivity(intent);
             }
         });
